@@ -1,6 +1,5 @@
 # servicios/restaurante.py
 
-# Importamos las clases de modelos
 from modelos.producto import Producto
 from modelos.cliente import Cliente
 
@@ -9,8 +8,8 @@ class Restaurante:
     
     def __init__(self, nombre):
         self.nombre = nombre
-        self.productos = []   # Lista para almacenar objetos Producto
-        self.clientes = []    # Lista para almacenar objetos Cliente
+        self.productos = []   
+        self.clientes = []    
     
     def agregar_producto(self, producto):
         """Agrega un producto a la lista."""
@@ -39,5 +38,4 @@ class Restaurante:
             print("\n--- LISTA DE CLIENTES ---")
             for cli in self.clientes:
                 print(cli)
-    
-    # Puedes agregar más métodos: buscar_producto, realizar_pedido, etc.
+            
