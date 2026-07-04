@@ -5,10 +5,10 @@ from modelos.producto import Producto
 from modelos.cliente import Cliente
 
 def main():
-    # 1. Crear el restaurante
+    # Crear el restaurante
     mi_restaurante = Restaurante("Mi Rincón Sabroso")
     
-    # 2. Crear productos (plato principal, entrada,  bebidas, postres, etc.)
+    # Crear productos (plato principal, entrada,  bebidas, postres, etc.)
     producto1 = Producto("Guiso de arroz", 15.50, "Plato Principal")
     producto2 = Producto("Refresco", 1.50, "Bebida")
     producto3 = Producto("Tarta de Queso", 4.00, "Postre")
@@ -19,11 +19,11 @@ def main():
     producto8 = Producto("Helado de paila", 3.00, "Postre")
     producto9 = Producto("Colada morada", 1.50, "Bebida")
 
-    # 3. Crear clientes
+    # Crear clientes
     cliente1 = Cliente("Ana Gómez", "0912345678", "ana@gmail.com")
     cliente2 = Cliente("Luis Pérez", "0987654321", "luis@gmail.com")
     
-    # 4. Agregar productos y clientes al restaurante
+    # Agregar productos y clientes al restaurante
     mi_restaurante.agregar_producto(producto1)
     mi_restaurante.agregar_producto(producto2)
     mi_restaurante.agregar_producto(producto3)
@@ -36,11 +36,10 @@ def main():
     mi_restaurante.agregar_cliente(cliente1)
     mi_restaurante.agregar_cliente(cliente2)
     
-    # 5. Mostrar información
+    # Mostrar información
     mi_restaurante.mostrar_productos()
     mi_restaurante.mostrar_clientes()
 
-    # 6. (Opcional) Puedes agregar más interacciones para demostrar funcionalidad extra
 
 if __name__ == "__main__":
     main()
