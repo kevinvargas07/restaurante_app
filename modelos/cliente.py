@@ -1,15 +1,16 @@
 # modelos/cliente.py
 
+from dataclasses import dataclass
+
+
+@dataclass
 class Cliente:
-    """Clase que representa a un cliente del restaurante."""
-    
-    def __init__(self, nombre, telefono, correo=None):
-        self.nombre = nombre
-        self.telefono = telefono
-        self.correo = correo
-        # Podrías tener una lista de pedidos realizados, si quieres.
-    
+    """Representa a un cliente del restaurante."""
+
+    nombre: str
+    correo: str
+    id_cliente: int
+
     def __str__(self):
-        return f"Cliente: {self.nombre} | Tel: {self.telefono}"
+        return f"Cliente: {self.nombre} | Correo: {self.correo} | ID: {self.id_cliente}"
     
-    # Métodos adicionales: modificar datos, agregar pedido, etc.
