@@ -1,6 +1,7 @@
 # modelos/producto.py
 
 class Producto:
+<<<<<<< HEAD
     """Representa un producto del restaurante."""
 
     def __init__(self, nombre, categoria, precio, disponible=True):
@@ -9,8 +10,14 @@ class Producto:
         self._precio = None
         self._disponible = None
 
+=======
+    
+    def __init__(self, nombre, precio, categoria="Sin categoría"):
+        # Completa con los atributos que consideres necesarios
+>>>>>>> cbe94b31aabb4e20d1cd7a70facd0810c7e6d0c1
         self.nombre = nombre
         self.categoria = categoria
+<<<<<<< HEAD
         self.precio = precio
         self.disponible = disponible
 
@@ -65,3 +72,10 @@ class Producto:
         return f"Producto: {self.nombre} | Categoría: {self.categoria} | Precio: ${self.precio:.2f} | Estado: {estado}"
     def __str__(self):
         return self.mostrar_informacion()
+=======
+    
+    def __str__(self):
+        # Devuelve una cadena amigable para mostrar el producto
+        return f"{self.nombre} - ${self.precio:.2f} ({self.categoria})"
+    
+>>>>>>> cbe94b31aabb4e20d1cd7a70facd0810c7e6d0c1

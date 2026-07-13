@@ -8,6 +8,7 @@ class Restaurante:
     """Clase de servicio para administrar productos y clientes del restaurante."""
 
     def __init__(self, nombre):
+<<<<<<< HEAD
         self.nombre = nombre.strip()
         self.productos = []
         self.clientes = []
@@ -15,6 +16,14 @@ class Restaurante:
     def registrar_producto(self, nombre, categoria, precio, disponible=True):
         """Crea y registra un producto en la lista del restaurante."""
         producto = Producto(nombre, categoria, precio, disponible)
+=======
+        self.nombre = nombre
+        self.productos = []   
+        self.clientes = []    
+    
+    def agregar_producto(self, producto):
+        """Agrega un producto a la lista."""
+>>>>>>> cbe94b31aabb4e20d1cd7a70facd0810c7e6d0c1
         self.productos.append(producto)
         print(f"Producto registrado: {producto.nombre}")
         return producto
@@ -61,6 +70,7 @@ class Restaurante:
         """Muestra todos los clientes registrados."""
         if not self.clientes:
             print("No hay clientes registrados.")
+<<<<<<< HEAD
             return []
 
         print("\n--- LISTA DE CLIENTES ---")
@@ -91,3 +101,10 @@ class Restaurante:
         for cliente in resultados:
             print(cliente)
         return resultados
+=======
+        else:
+            print("\n--- LISTA DE CLIENTES ---")
+            for cli in self.clientes:
+                print(cli)
+            
+>>>>>>> cbe94b31aabb4e20d1cd7a70facd0810c7e6d0c1
